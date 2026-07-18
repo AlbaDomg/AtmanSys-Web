@@ -284,6 +284,7 @@ ul {
     display: flex;
     align-items: center;
     background: radial-gradient(circle at 10% 20%, rgba(217, 119, 36, 0.05) 0%, transparent 60%);
+    overflow: hidden;
 }
 
 .hero-bg-glow {
@@ -382,9 +383,9 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 220px;
-    height: 220px;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
     border: 2px solid var(--accent-orange);
     animation: radar-pulse 3s infinite ease-out;
@@ -425,13 +426,11 @@ ul {
 
 @keyframes radar-pulse {
     0% {
-        width: 180px;
-        height: 180px;
+        transform: translate(-50%, -50%) scale(0.5);
         opacity: 0.8;
     }
     100% {
-        width: 420px;
-        height: 420px;
+        transform: translate(-50%, -50%) scale(1.15);
         opacity: 0;
     }
 }
@@ -767,6 +766,7 @@ ul {
     position: relative;
     background: radial-gradient(circle at bottom right, rgba(217, 119, 36, 0.05) 0%, transparent 60%);
     border-top: 1px solid rgba(255, 255, 255, 0.03);
+    overflow: hidden;
 }
 
 .contact-bg-glow {
@@ -1057,6 +1057,10 @@ ul {
         display: block;
     }
     
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -1096,20 +1100,77 @@ ul {
         padding-top: 140px;
     }
     
-    .hero-headline {
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-tagline {
         font-size: 2.5rem;
+    }
+    
+    .hero-headline {
+        font-size: 2.2rem;
     }
     
     .hero-subtitle {
         font-size: 1.1rem;
+        border-left: none;
+        border-bottom: 2px solid var(--accent-orange);
+        padding-left: 0;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        display: inline-block;
+    }
+    
+    .hero-cta-group {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .abstract-graphic {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    
+    .graphic-circle {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .graphic-pulse {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .hero-logo-center {
+        width: 180px;
+        height: 180px;
     }
     
     .section-title {
         font-size: 2rem;
     }
     
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-study-wrapper {
+        padding: 2rem 1.25rem;
+    }
+    
     .case-study-title {
         font-size: 1.8rem;
+    }
+    
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
     }
     
     .contact-title {
@@ -1120,6 +1181,11 @@ ul {
         padding: 2rem 1.5rem;
     }
     
+    .diagnostic-box {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -1128,9 +1194,5 @@ ul {
     
     .footer-info {
         text-align: center;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
     }
 }
