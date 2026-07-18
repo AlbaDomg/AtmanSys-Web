@@ -1053,6 +1053,13 @@ ul {
 }
 
 @media (max-width: 768px) {
+    /* Disable scroll reveal animations on mobile for a static layout */
+    .animate-reveal,
+    .animate-reveal.active {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
     .nav-toggle {
         display: block;
     }
