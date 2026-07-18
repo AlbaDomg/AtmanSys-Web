@@ -1166,6 +1166,10 @@ ul {
         grid-template-columns: 1fr;
     }
     
+    .service-icon-wrapper {
+        align-self: center;
+    }
+    
     .case-study-wrapper {
         padding: 2rem 1.25rem;
     }
