@@ -739,17 +739,32 @@ ul {
 .about-container {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    gap: 5rem;
+    grid-template-areas:
+        "header card"
+        "bio card";
+    column-gap: 5rem;
+    row-gap: 1.5rem;
     align-items: center;
 }
 
+.about-header {
+    grid-area: header;
+}
+
 .about-bio {
+    grid-area: bio;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     font-size: 1.05rem;
     color: var(--text-muted);
-    margin-bottom: 2.5rem;
+}
+
+.about-image-container {
+    grid-area: card;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signature-container {
@@ -1143,10 +1158,18 @@ ul {
     
     .hero-container,
     .case-study-wrapper,
-    .about-container,
     .contact-container {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "card"
+            "bio";
+        gap: 2.5rem;
     }
     
     .hero-graphic-container {
