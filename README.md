@@ -72,23 +72,7 @@ The project's content and messaging were organized separately in `copywriting_at
 ### Deployment
 
 - Vercel
-
----
-
-## 📁 Project Structure
-
-```text
-AtmanSys-Web/
-│
-├── assets/
-│   └── Images and visual resources
-│
-├── copywriting_atmansys.md
-├── index.html
-├── index.css
-└── index.js
-```
-
+  
 ---
 
 ## 🧩 Architecture
