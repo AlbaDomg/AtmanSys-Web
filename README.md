@@ -69,7 +69,7 @@ The project's content and messaging were organized separately in `copywriting_at
 - CSS3
 - JavaScript
 
-## Deployment
+### Deployment
 
 - Vercel
 
