@@ -58,8 +58,8 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 92%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -170,7 +170,8 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    max-width: 1200px;
+    width: 92%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -314,7 +315,7 @@ ul {
 
 .hero-tagline {
     font-family: var(--font-signature);
-    font-size: 3.2rem;
+    font-size: clamp(2.4rem, 3.2vw + 0.8rem, 3.8rem);
     color: #E0E0E0;
     margin-bottom: 0.25rem;
     display: inline-block;
@@ -327,14 +328,14 @@ ul {
 }
 
 .hero-headline {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 3.8vw + 0.5rem, 4.4rem);
     line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 1.2vw + 0.4rem, 1.4rem);
     color: var(--text-light);
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -343,10 +344,10 @@ ul {
 }
 
 .hero-description {
-    font-size: 1.05rem;
+    font-size: clamp(1rem, 1vw + 0.3rem, 1.15rem);
     color: var(--text-muted);
     margin-bottom: 2.5rem;
-    max-width: 620px;
+    max-width: 720px;
 }
 
 .hero-bullets {
@@ -418,8 +419,8 @@ ul {
 
 .abstract-graphic {
     position: relative;
-    width: 520px;
-    height: 520px;
+    width: clamp(380px, 34vw, 580px);
+    height: clamp(380px, 34vw, 580px);
 }
 
 .graphic-circle {
@@ -427,8 +428,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 460px;
-    height: 460px;
+    width: clamp(340px, 30vw, 520px);
+    height: clamp(340px, 30vw, 520px);
     border-radius: 50%;
     border: 1px solid rgba(217, 119, 36, 0.2);
     background: radial-gradient(circle, rgba(217, 119, 36, 0.08) 0%, transparent 80%);
@@ -439,8 +440,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
-    width: 460px;
-    height: 460px;
+    width: clamp(340px, 30vw, 520px);
+    height: clamp(340px, 30vw, 520px);
     border-radius: 50%;
     border: 2px solid var(--accent-orange);
     animation: radar-pulse 3s infinite ease-out;
@@ -451,8 +452,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 320px;
-    height: 320px;
+    width: clamp(240px, 22vw, 360px);
+    height: clamp(240px, 22vw, 360px);
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--accent-orange);
@@ -513,13 +514,13 @@ ul {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 2.5vw + 0.5rem, 3.2rem);
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 }
 
 .section-description {
-    font-size: 1.1rem;
+    font-size: clamp(1.05rem, 1.1vw + 0.3rem, 1.25rem);
     color: var(--text-muted);
 }
 
@@ -622,11 +623,11 @@ ul {
 .case-study-wrapper {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    gap: 4rem;
+    gap: clamp(2.5rem, 4vw, 5rem);
     background: rgba(18, 18, 18, 0.6);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: 4rem;
+    padding: clamp(2.5rem, 4vw, 4.5rem);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
